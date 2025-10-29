@@ -1,1 +1,1 @@
-Daniel strahlt vor lauter Coolnis!
+Daniel leckt Eier vor Coolnes
