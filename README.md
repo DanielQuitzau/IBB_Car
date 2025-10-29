@@ -1,1 +1,1 @@
-Daniel stinkt!
+Daniel strahlt vor lauter Coolnis!
