@@ -20,8 +20,13 @@ class SerialConnection:
 
     def read_line(self):
         """Liest eine Zeile vom Arduino"""
-        if self.ser and self.ser.in_waiting > 0:
-            return self.ser.readline().decode("utf-8").strip()
+        if self.ser:
+            try:
+                line = self.ser.readline().decode("utf-8").strip()
+                if line:  # Nur zurückgeben wenn nicht leer
+                    return line
+            except Exception as e:
+                print(f"Fehler beim Lesen: {e}")
         return None
 
     def send(self, message):
